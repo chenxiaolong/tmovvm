@@ -1,0 +1,6 @@
+#!/system/bin/sh
+
+set -eu
+
+script_dir=$(dirname "${0}")
+CLASSPATH=${script_dir}/tmovvm.apk exec app_process / com.android.tmovvm.Main "${@}"
