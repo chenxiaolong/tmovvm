@@ -754,8 +754,8 @@ public class MStoreClient {
      */
     public void uploadObject(@NonNull String folder, @NonNull MStoreObject object,
             @NonNull byte[] data) throws MStoreException, IOException {
-        final var boundaryInner = "google-dialer-voicemail-greeting-deposit-inner";
-        final var boundaryOuter = "google-dialer-voicemail-greeting-deposit-outer";
+        final var boundaryInner = "voicemail-greeting-inner";
+        final var boundaryOuter = "voicemail-greeting-outer";
 
         // The first multipart body is the object metadata.
         final byte[] objectJson;
